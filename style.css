@@ -1,0 +1,150 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  max-width: 1200px;
+  margin: 20px auto;
+  padding: 20px;
+  background-color: #f0f2f5;
+}
+
+.upload-form {
+  background-color: white;
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+h2 {
+  color: #4a0bd2;
+  margin-bottom: 25px;
+}
+
+.file-upload-container {
+  position: relative;
+  display: inline-block;
+}
+
+.file-upload-label {
+  display: inline-block;
+  padding: 15px 25px;
+  background: #4a0bd2;
+  color: white;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: all 0.3s ease;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+}
+
+.file-upload-label:hover {
+  background: #6025de;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+}
+
+.file-name {
+  margin-top: 15px;
+  color: #4a0bd2;
+  font-size: 14px;
+}
+
+#file-input {
+  display: none;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  background-color: white;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+  border-radius: 12px;
+  overflow: hidden;
+}
+
+th, td {
+  padding: 15px 20px;
+  text-align: center;
+  border-bottom: 1px solid #eee;
+}
+
+th {
+  background-color: #4a0bd2;
+  color: #fff;
+  font-weight: 400;
+  text-transform: uppercase;
+  font-size: 14px;
+}
+
+tr:hover {
+  background-color: #b0b2f5;
+}
+
+.message {
+  padding: 30px;
+  background-color: white;
+  border-radius: 12px;
+  text-align: center;
+  color: #666;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+}
+@media screen and (max-width: 768px) {
+  body {
+      padding: 10px;
+  }
+
+  .upload-form {
+      padding: 15px;
+  }
+
+  h2 {
+      font-size: 1.25rem;
+  }
+
+  .file-upload-label {
+      padding: 10px 15px;
+  }
+
+  th, td {
+      padding: 10px;
+      font-size: 0.8125rem;
+  }
+
+  .message {
+      padding: 15px;
+      font-size: 0.875rem;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .upload-form {
+      padding: 12px;
+  }
+
+  h2 {
+      font-size: 1.125rem;
+      margin-bottom: 15px;
+  }
+
+  .file-upload-label {
+      font-size: 0.875rem;
+  }
+
+  .file-name {
+      font-size: 0.75rem;
+  }
+}
+/* Animation for table appearance */
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+#table-container table {
+  animation: fadeIn 0.5s ease-out;
+}
